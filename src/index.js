@@ -1,10 +1,11 @@
+import "./style.css";
 function loadRecipes() {
   return fetch("data.json")
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
       insertRecipes(data.recipes);
     })
-    .catch((error) => {
+    .catch(error => {
       console.error("Error fetching recipes:", error);
     });
 }
@@ -39,7 +40,7 @@ function createHTMLStructure() {
 
 function waitForImagesToLoad() {
   const images = document.querySelectorAll("img");
-  const promises = Array.from(images).map((img) => {
+  const promises = Array.from(images).map(img => {
     return new Promise((resolve, reject) => {
       if (img.complete) {
         resolve();
