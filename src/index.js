@@ -1,9 +1,10 @@
 import "./style.css";
+
 function loadRecipes() {
-  return fetch("data.json")
+  return fetch("recipes.json")
     .then(response => response.json())
     .then(data => {
-      insertRecipes(data.recipes);
+      insertRecipes(data);
     })
     .catch(error => {
       console.error("Error fetching recipes:", error);
@@ -23,7 +24,7 @@ function renderRecipe(recipe) {
 
 function insertRecipes(recipes) {
   const recipeList = document.querySelector(".recipeList");
-  const recipeHTML = recipes.map(renderRecipe).join("");
+  const recipeHTML = recipes.map(renderRecipe).join(""); // Map over the recipes directly
   recipeList.innerHTML = recipeHTML;
 }
 
