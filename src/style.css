@@ -81,7 +81,7 @@ h1 {
 #inputArea {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 10px;
   background-color: #dce0f0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -89,7 +89,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-#spacer {
+.spacer {
   margin: 40px;
 }
 #inputArea input,

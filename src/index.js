@@ -23,12 +23,12 @@ function renderRecipe(recipe) {
         <h2>${recipe.title}</h2>
         <p><strong>Ingredients:</strong> ${recipe.ingredients}</p>
         <div id = "endSection">
-        <a href="${recipe.link}" target="_blank">View Recipe</a>
-        <div id="deleteEdit">
-        <button type="button" class="deleteBtn actionBtn">♻</button>
-        <span id="spacer"></span>
-        <button type="button" class="editBtn actionBtn">✖</button>
-        </div>
+          <a href="${recipe.link}" target="_blank">View Recipe</a>
+          <div id="deleteEdit">
+            <button type="button" class="deleteBtn actionBtn">♻</button>
+            <span class="spacer"></span>
+            <button type="button" class="editBtn actionBtn">✖</button>
+          </div>
         </div>
       </li>
     `;
@@ -52,7 +52,8 @@ function createHTMLStructure() {
             <input type="file" name="" id="imageInput" />
             <input type="text" name="" id="ingredinentsInput" placeholder="Enter ingredients" />
             <input type="url" name="" id="linkInput" placeholder="Enter link" />
-            
+            <button type="reset">✖</button>
+            <button type="submit">✔</button>
           </div>
         <ul id="recipeList" class="recipeList"></ul>
       </div>
