@@ -1,22 +1,22 @@
 [
   {
+    "id": 1,
     "title": "Shortcake biscuits",
     "image": "images/1.jpg",
-    "alt": "Biscuits",
     "ingredients": "250 gr flour, 100gr icing sugar, 200gr butter, 1 egg (2 tbsp), 2 tbsp vanilla essence, Nuts for decorating",
     "link": "#"
   },
   {
+    "id": 2,
     "title": "Clafoutis",
     "image": "images/2.jpg",
-    "alt": "Clafoutis",
     "ingredients": "3 eggs, 200 ml milk, 75 gr flour, 30 gr melted butter, 60-80 gr sugar, 300-400 gr frozen cherries (or fresh or frozen fruit), butter for greasing the pan, 2-3 tablespoons of sugar to sprinkle on the pan",
     "link": "https://tastebazaar.ro/2021/02/clafoutis-cu-visine.html"
   },
   {
+    "id": 3,
     "title": "Carrot Cake",
     "image": "images/3.jpg",
-    "alt": "Carrot Cake",
     "ingredients": "155ml sunflower oil, plus extra for greasing, 230g self-raising flour, 1 tsp baking powder, 1½ tsp ground cinnamon, ½ tsp mixed spice, ½ tsp ground ginger, 230g light brown muscovado sugar, Finely grated zest of 1 satsuma or mandarin, plus strips to decorate, 100g pecans, halved, 260g carrots, coarsely grated, 3 medium free-range eggs, beaten, For the icing: 50g butter, softened, 200g full-fat cream cheese, we recommend Philadelphia, 100g icing sugar, plus extra to dust, Finely grated zest of 1 orange, For the orange peel: 2 oranges, 200ml water, 200g caster sugar",
     "link": "https://www.deliciousmagazine.co.uk/recipes/paul-hollywoods-ultimate-carrot-cake/"
   }

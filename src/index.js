@@ -1,7 +1,12 @@
 import "./style.css";
 
 function loadRecipes() {
-  return fetch("recipes.json")
+  return fetch("http://localhost:3000/recipes-json", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
     .then(response => response.json())
     .then(data => {
       insertRecipes(data);
@@ -14,7 +19,7 @@ function loadRecipes() {
 function renderRecipe(recipe) {
   return `
       <li class="recipeItem">
-        <img src="${recipe.image}" alt="${recipe.alt}" loading="lazy" />
+        <img src="${recipe.image}" alt="${recipe.title}" loading="lazy" />
         <h2>${recipe.title}</h2>
         <p><strong>Ingredients:</strong> ${recipe.ingredients}</p>
         <a href="${recipe.link}" target="_blank">View Recipe</a>
